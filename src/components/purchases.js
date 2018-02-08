@@ -13,11 +13,10 @@ class Purchases {
     getPurchasesFromApi(searchQuery, perPageAmount, pageNumber) {
         const url = `${baseUrl}/${searchQuery}?per_page=${perPageAmount}&page=${pageNumber}`
         return (getFromAxios(url))
-            .then (
+            .then(
             response => {
                 this.responseData = this.responseData.concat(response.data.data)
                 this.responseOnPage = (response.data.data).length
-                console.log("here",this.responseOnPage)
                 return console.log(this.responseData);
             }
             )
@@ -30,18 +29,13 @@ class Purchases {
 
     async getAllPurchases(searchQuery, perPageAmount, pageNumber) {
         await (this.getPurchasesFromApi(searchQuery, perPageAmount, pageNumber))
-        console.log(this.responseOnPage)
-        console.log(perPageAmount)
-        this.getPurchasesFromApi(searchQuery, perPageAmount, pageNumber)
-
         while (this.responseOnPage == perPageAmount) {
             await this.getPurchasesFromApi(searchQuery, perPageAmount, pageNumber)
             pageNumber++
-            console.log("hello", pageNumber)
-            console.log(this.responseOnPage)
+            console.log("Current page number hit", pageNumber)
+            console.log("Current number of data entries on current page", this.responseOnPage)
         }
-        return console.log(this.responseOnPage)
-
+        return console.log("Number of purchase data entries",(this.responseData).length)
     }
 };
 

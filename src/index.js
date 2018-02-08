@@ -20,7 +20,7 @@ module.exports = {
 
     }
 }
-// node index.js purchases 10 1
+// node index.js testCall purchases 100 1
 // ARGV to allow command line interactions
 
 require('make-runnable');
