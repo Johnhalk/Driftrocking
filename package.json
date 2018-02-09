@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha $(find src -name '*spec.js')"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
     "async": "^2.6.0",
     "axios": "^0.17.1",
     "es6-promise": "^4.2.4",
+    "expect": "^22.2.0",
     "isomorphic-fetch": "^2.2.1",
-    "make-runnable": "^1.3.6"
+    "make-runnable": "^1.3.6",
+    "mocha": "^5.0.0",
+    "moxios": "^0.4.0",
+    "sinon": "^4.2.2"
   }
 }

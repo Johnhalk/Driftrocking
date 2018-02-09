@@ -1,4 +1,4 @@
-var callAPI = require("../services/apiServices")
+var getFromAxios = require("../services/apiServices")
 var config = require('../config.json')
 var async = require('async')
 
