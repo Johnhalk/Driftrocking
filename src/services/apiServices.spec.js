@@ -2,9 +2,10 @@ var axios = require('axios'),
     moxios = require('moxios'),
     sinon = require('sinon'),
     expect = require('expect'),
+    purchaseStub = require('../stub/purchaseStubData.json'),
     getFromAxios = require("./apiServices");
 
-let baseUrl = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=1&page=1'
+let baseUrl = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=100&page=10'
 
 describe('getFromAxios', () => {
     beforeEach(() => {
@@ -16,15 +17,7 @@ describe('getFromAxios', () => {
     })
 
     it('gets a response from api call', (done) => {
-        const expectedResults = {
-            "data": [
-                {
-                    "user_id": "KTR6-I42Y-6SZH-7YMZ",
-                    "item": "Lightweight Steel Car",
-                    "spend": "3.33"
-                }
-            ]
-        }
+        const expectedResults = purchaseStub
 
         moxios.stubRequest(baseUrl, {
             status: 200,

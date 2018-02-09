@@ -1,0 +1,504 @@
+{
+    "data": [
+        {
+            "user_id": "KTR6-I42Y-6SZH-7YMZ",
+            "item": "Lightweight Steel Car",
+            "spend": "3.33"
+        },
+        {
+            "user_id": "KTR6-I42Y-6SZH-7YMZ",
+            "item": "Heavy Duty Iron Table",
+            "spend": "5.84"
+        },
+        {
+            "user_id": "CRT8-EOSQ-JX7F-7MFK",
+            "item": "Durable Linen Plate",
+            "spend": "49.51"
+        },
+        {
+            "user_id": "XDD7-DLCE-IZ7A-HABU",
+            "item": "Synergistic Concrete Shoes",
+            "spend": "18.87"
+        },
+        {
+            "user_id": "V81U-XLC4-UO5O-4VRI",
+            "item": "Synergistic Steel Bench",
+            "spend": "68.65"
+        },
+        {
+            "user_id": "H62H-QG0U-VKOP-XR8E",
+            "item": "Synergistic Paper Keyboard",
+            "spend": "87.61"
+        },
+        {
+            "user_id": "13HD-1XWV-S0Q4-TFTD",
+            "item": "Awesome Iron Table",
+            "spend": "65.99"
+        },
+        {
+            "user_id": "M63C-6DWR-6P08-ZAG4",
+            "item": "Durable Wool Shirt",
+            "spend": "11.11"
+        },
+        {
+            "user_id": "ORKU-9FPK-DQ10-Z9YZ",
+            "item": "Rustic Linen Bottle",
+            "spend": "31.93"
+        },
+        {
+            "user_id": "6MLK-TRM5-XN6A-YTRE",
+            "item": "Small Wool Gloves",
+            "spend": "77.94"
+        },
+        {
+            "user_id": "1A18-G76J-Z0YZ-MC8F",
+            "item": "Fantastic Wooden Keyboard",
+            "spend": "22.57"
+        },
+        {
+            "user_id": "HEI7-W5NW-OO9S-Z382",
+            "item": "Rustic Paper Bench",
+            "spend": "48.7"
+        },
+        {
+            "user_id": "X416-91FA-MDKR-VSM2",
+            "item": "Ergonomic Granite Shoes",
+            "spend": "95.55"
+        },
+        {
+            "user_id": "GW4Z-YIGD-XENS-888E",
+            "item": "Lightweight Wooden Shoes",
+            "spend": "72.85"
+        },
+        {
+            "user_id": "QMQV-F9LA-V4KC-9160",
+            "item": "Enormous Linen Coat",
+            "spend": "3.27"
+        },
+        {
+            "user_id": "RNNO-NVUH-LX89-2RVB",
+            "item": "Incredible Granite Lamp",
+            "spend": "13.49"
+        },
+        {
+            "user_id": "F6UF-NQ32-D9Z9-03SJ",
+            "item": "Ergonomic Wooden Coat",
+            "spend": "30.68"
+        },
+        {
+            "user_id": "ML00-PPBP-4TT7-JIRD",
+            "item": "Sleek Paper Lamp",
+            "spend": "3.87"
+        },
+        {
+            "user_id": "NJWP-IJAS-YNZH-9CZ9",
+            "item": "Fantastic Wooden Shirt",
+            "spend": "17.5"
+        },
+        {
+            "user_id": "82KF-ZFUA-GSF4-2MXD",
+            "item": "Aerodynamic Aluminum Shirt",
+            "spend": "33.69"
+        },
+        {
+            "user_id": "PECR-QSQ1-LM7Y-SWTE",
+            "item": "Sleek Concrete Shoes",
+            "spend": "16.53"
+        },
+        {
+            "user_id": "7C74-6DHB-LPNI-LLIM",
+            "item": "Enormous Plastic Gloves",
+            "spend": "33.54"
+        },
+        {
+            "user_id": "65ZM-3MPR-0DHU-H2ZU",
+            "item": "Lightweight Steel Computer",
+            "spend": "9.44"
+        },
+        {
+            "user_id": "1F4J-ZRPS-55DX-LBBK",
+            "item": "Aerodynamic Steel Shoes",
+            "spend": "9.65"
+        },
+        {
+            "user_id": "RZLF-C7JM-5D3F-FA7L",
+            "item": "Mediocre Bronze Car",
+            "spend": "23.6"
+        },
+        {
+            "user_id": "0V7I-BNZG-L951-VBPI",
+            "item": "Practical Wooden Shoes",
+            "spend": "28.24"
+        },
+        {
+            "user_id": "5RF0-FY9Y-7W3D-G8J8",
+            "item": "Lightweight Plastic Keyboard",
+            "spend": "64.23"
+        },
+        {
+            "user_id": "NJWP-IJAS-YNZH-9CZ9",
+            "item": "Gorgeous Copper Gloves",
+            "spend": "41.29"
+        },
+        {
+            "user_id": "D698-CTC8-SUPA-7Y4A",
+            "item": "Intelligent Steel Table",
+            "spend": "3.39"
+        },
+        {
+            "user_id": "GW8E-26WD-GXZG-Z754",
+            "item": "Durable Paper Bottle",
+            "spend": "55.08"
+        },
+        {
+            "user_id": "I3L8-NOFN-BE9H-AIM0",
+            "item": "Awesome Cotton Shoes",
+            "spend": "81.26"
+        },
+        {
+            "user_id": "LLZP-0PPJ-82HA-M6LO",
+            "item": "Practical Wool Hat",
+            "spend": "58.88"
+        },
+        {
+            "user_id": "RNNO-NVUH-LX89-2RVB",
+            "item": "Durable Iron Watch",
+            "spend": "27.26"
+        },
+        {
+            "user_id": "54YM-U2K8-2U21-S78Q",
+            "item": "Synergistic Steel Plate",
+            "spend": "42.81"
+        },
+        {
+            "user_id": "ML00-PPBP-4TT7-JIRD",
+            "item": "Gorgeous Cotton Shirt",
+            "spend": "62.73"
+        },
+        {
+            "user_id": "KKBS-YDZL-1OIR-78FS",
+            "item": "Mediocre Iron Knife",
+            "spend": "35.25"
+        },
+        {
+            "user_id": "LCWC-R9QJ-2ZFU-UZP4",
+            "item": "Enormous Plastic Clock",
+            "spend": "41.7"
+        },
+        {
+            "user_id": "CK3T-ISUK-0Y2U-507Q",
+            "item": "Intelligent Silk Clock",
+            "spend": "4.81"
+        },
+        {
+            "user_id": "TF81-K2M1-07UH-AN07",
+            "item": "Sleek Linen Bench",
+            "spend": "71.27"
+        },
+        {
+            "user_id": "EBTR-8C1N-2I6V-LRUI",
+            "item": "Sleek Cotton Clock",
+            "spend": "6.57"
+        },
+        {
+            "user_id": "5AC3-QETQ-WLB0-YJSV",
+            "item": "Rustic Cotton Shirt",
+            "spend": "9.73"
+        },
+        {
+            "user_id": "KKBB-4693-P9IF-CKB8",
+            "item": "Sleek Leather Hat",
+            "spend": "97.27"
+        },
+        {
+            "user_id": "0EHW-GM40-ZPGA-ALHE",
+            "item": "Lightweight Wooden Car",
+            "spend": "94.47"
+        },
+        {
+            "user_id": "9AZJ-52O0-YWDG-CZGQ",
+            "item": "Rustic Leather Computer",
+            "spend": "38.15"
+        },
+        {
+            "user_id": "8CYV-1Z30-CHH3-F1K7",
+            "item": "Incredible Wooden Pants",
+            "spend": "56.3"
+        },
+        {
+            "user_id": "WM8R-AZEM-UQN2-QW4U",
+            "item": "Incredible Paper Plate",
+            "spend": "98.27"
+        },
+        {
+            "user_id": "IVFH-C6TT-MEL1-ZB9B",
+            "item": "Aerodynamic Paper Coat",
+            "spend": "91.92"
+        },
+        {
+            "user_id": "RNNO-NVUH-LX89-2RVB",
+            "item": "Heavy Duty Concrete Watch",
+            "spend": "61.15"
+        },
+        {
+            "user_id": "UALD-ZVBO-2DIG-841T",
+            "item": "Intelligent Bronze Table",
+            "spend": "97.53"
+        },
+        {
+            "user_id": "9DGK-F14C-FFKU-3FMD",
+            "item": "Practical Concrete Computer",
+            "spend": "23.03"
+        },
+        {
+            "user_id": "OGNP-MWZE-4HZJ-GFGF",
+            "item": "Rustic Marble Table",
+            "spend": "62.84"
+        },
+        {
+            "user_id": "2MU1-8ZBR-P9OE-M0GT",
+            "item": "Gorgeous Bronze Lamp",
+            "spend": "40.82"
+        },
+        {
+            "user_id": "9GUB-1IE9-46P7-890T",
+            "item": "Mediocre Wool Shirt",
+            "spend": "61.45"
+        },
+        {
+            "user_id": "26Q4-BE2K-WJWY-RSI5",
+            "item": "Durable Copper Computer",
+            "spend": "6.8"
+        },
+        {
+            "user_id": "P8A3-SKOY-V4YE-VJ3H",
+            "item": "Synergistic Granite Wallet",
+            "spend": "94.18"
+        },
+        {
+            "user_id": "B10W-IRVW-R6EQ-QC7L",
+            "item": "Gorgeous Leather Wallet",
+            "spend": "3.07"
+        },
+        {
+            "user_id": "WZRC-6ASU-HAK9-XVUX",
+            "item": "Durable Rubber Bag",
+            "spend": "49.28"
+        },
+        {
+            "user_id": "6NDF-3GF7-1BPT-2K99",
+            "item": "Practical Plastic Coat",
+            "spend": "74.25"
+        },
+        {
+            "user_id": "I7ME-022F-1HLN-1EPH",
+            "item": "Awesome Granite Clock",
+            "spend": "75.79"
+        },
+        {
+            "user_id": "L41X-OTS2-GIF1-BI52",
+            "item": "Small Iron Table",
+            "spend": "48.16"
+        },
+        {
+            "user_id": "UGVF-VMM8-O666-O3O9",
+            "item": "Ergonomic Steel Shirt",
+            "spend": "97.37"
+        },
+        {
+            "user_id": "1AGK-ULSW-JW2E-LTJ2",
+            "item": "Rustic Concrete Wallet",
+            "spend": "32.18"
+        },
+        {
+            "user_id": "1PJN-KPF2-3YMN-BE8C",
+            "item": "Practical Silk Knife",
+            "spend": "22.57"
+        },
+        {
+            "user_id": "L5CM-43MY-9BBM-8WGD",
+            "item": "Fantastic Plastic Knife",
+            "spend": "33.88"
+        },
+        {
+            "user_id": "0EHW-GM40-ZPGA-ALHE",
+            "item": "Small Concrete Plate",
+            "spend": "1.96"
+        },
+        {
+            "user_id": "BNDO-GJOX-XWHM-6VCN",
+            "item": "Small Bronze Car",
+            "spend": "34.6"
+        },
+        {
+            "user_id": "RZLF-C7JM-5D3F-FA7L",
+            "item": "Incredible Bronze Shoes",
+            "spend": "40.37"
+        },
+        {
+            "user_id": "0X70-I24U-3QES-WMRP",
+            "item": "Rustic Concrete Watch",
+            "spend": "27.52"
+        },
+        {
+            "user_id": "T3AM-KB71-HTDD-BWBA",
+            "item": "Enormous Wool Keyboard",
+            "spend": "72.42"
+        },
+        {
+            "user_id": "BDSC-9IPP-IQEI-TJUV",
+            "item": "Awesome Paper Pants",
+            "spend": "1.29"
+        },
+        {
+            "user_id": "XPG6-498X-YDPH-U5XD",
+            "item": "Heavy Duty Wooden Shirt",
+            "spend": "98.13"
+        },
+        {
+            "user_id": "HCDR-6TH3-JCJN-W6WV",
+            "item": "Enormous Aluminum Plate",
+            "spend": "1.29"
+        },
+        {
+            "user_id": "PMDW-C1RE-6ET1-1BQX",
+            "item": "Fantastic Rubber Clock",
+            "spend": "34.78"
+        },
+        {
+            "user_id": "L9TG-2AN4-V9IB-5620",
+            "item": "Durable Linen Chair",
+            "spend": "66.95"
+        },
+        {
+            "user_id": "4VHQ-H02T-DU4D-1NJB",
+            "item": "Durable Iron Keyboard",
+            "spend": "56.07"
+        },
+        {
+            "user_id": "NKR2-LUB6-NQB1-N5XQ",
+            "item": "Fantastic Plastic Keyboard",
+            "spend": "91.79"
+        },
+        {
+            "user_id": "OMH8-6B42-FIZA-E097",
+            "item": "Durable Concrete Knife",
+            "spend": "35.64"
+        },
+        {
+            "user_id": "C2IC-3LQE-N4DG-NC6W",
+            "item": "Sleek Silk Coat",
+            "spend": "32.36"
+        },
+        {
+            "user_id": "V7M9-AR8E-OZYR-AJL6",
+            "item": "Ergonomic Steel Hat",
+            "spend": "30.31"
+        },
+        {
+            "user_id": "YRTT-JWZR-CZ5P-GO1K",
+            "item": "Lightweight Rubber Clock",
+            "spend": "48.39"
+        },
+        {
+            "user_id": "LTVL-KMOT-RUQI-ROS6",
+            "item": "Gorgeous Granite Computer",
+            "spend": "21.83"
+        },
+        {
+            "user_id": "9MUV-U5YB-E9C8-8M4T",
+            "item": "Intelligent Iron Chair",
+            "spend": "22.16"
+        },
+        {
+            "user_id": "SD1A-GKU5-BADN-WUE7",
+            "item": "Aerodynamic Bronze Keyboard",
+            "spend": "98.24"
+        },
+        {
+            "user_id": "6MLK-TRM5-XN6A-YTRE",
+            "item": "Sleek Granite Pants",
+            "spend": "29.93"
+        },
+        {
+            "user_id": "85PM-1O8N-5JNE-5V2R",
+            "item": "Gorgeous Concrete Chair",
+            "spend": "29.29"
+        },
+        {
+            "user_id": "9NKF-45V2-6YIM-UU4A",
+            "item": "Durable Aluminum Bench",
+            "spend": "35.63"
+        },
+        {
+            "user_id": "5SMX-6JUT-Q3SV-SYMJ",
+            "item": "Heavy Duty Granite Bag",
+            "spend": "34.64"
+        },
+        {
+            "user_id": "XAD5-MBZQ-96JE-YVSA",
+            "item": "Synergistic Wooden Plate",
+            "spend": "6.48"
+        },
+        {
+            "user_id": "JTTQ-ZEVO-XB4C-8Z37",
+            "item": "Synergistic Marble Gloves",
+            "spend": "97.55"
+        },
+        {
+            "user_id": "HH24-JOG1-NLZF-L090",
+            "item": "Fantastic Granite Plate",
+            "spend": "7.32"
+        },
+        {
+            "user_id": "D7SX-61B3-WPJH-XTSY",
+            "item": "Awesome Silk Wallet",
+            "spend": "85.49"
+        },
+        {
+            "user_id": "V9E8-DAF0-UVS6-32KV",
+            "item": "Gorgeous Linen Clock",
+            "spend": "78.1"
+        },
+        {
+            "user_id": "76Y3-T0KB-RPX5-YVED",
+            "item": "Intelligent Marble Wallet",
+            "spend": "64.28"
+        },
+        {
+            "user_id": "KJBC-RZF1-M82M-DUI6",
+            "item": "Lightweight Marble Chair",
+            "spend": "39.62"
+        },
+        {
+            "user_id": "JH9L-KHBE-NFKM-XQ6G",
+            "item": "Sleek Concrete Plate",
+            "spend": "45.51"
+        },
+        {
+            "user_id": "8WJ1-FP2H-DBAG-UMRT",
+            "item": "Sleek Rubber Gloves",
+            "spend": "94.68"
+        },
+        {
+            "user_id": "76Y3-T0KB-RPX5-YVED",
+            "item": "Durable Plastic Knife",
+            "spend": "97.9"
+        },
+        {
+            "user_id": "L5CM-43MY-9BBM-8WGD",
+            "item": "Lightweight Steel Hat",
+            "spend": "81.51"
+        },
+        {
+            "user_id": "9ULJ-MRE5-D2Q3-JW90",
+            "item": "Ergonomic Steel Computer",
+            "spend": "69.99"
+        },
+        {
+            "user_id": "KAU8-71X0-0RNF-DX2V",
+            "item": "Sleek Leather Coat",
+            "spend": "74.35"
+        }
+    ]
+}
