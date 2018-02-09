@@ -35,7 +35,7 @@ class Purchases {
             console.log("Current page number hit", pageNumber)
             console.log("Current number of data entries on current page", this.responseOnPage)
         }
-        return console.log("Number of purchase data entries",(this.responseData).length)
+        return console.log("Number of purchase data entries", (this.responseData).length)
     }
 };
 
