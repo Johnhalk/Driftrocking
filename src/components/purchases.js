@@ -1,8 +1,10 @@
-var getFromAxios = require("../services/apiServices")
-var config = require('../config.json')
-var async = require('async')
+var getFromAxios = require("../services/apiServices"),
+    config = require('../config.json'),
+    async = require('async')
 
 let baseUrl = config.baseUrl
+let perPageAmount = config.perPageAmount
+let pageNumber = config.pageNumber
 
 class Purchases {
     constructor() {
@@ -10,7 +12,7 @@ class Purchases {
         this.responseData = []
     }
 
-    getPurchasesFromApi(searchQuery, perPageAmount, pageNumber) {
+    getPurchasesFromApi(searchQuery) {
         const url = `${baseUrl}/${searchQuery}?per_page=${perPageAmount}&page=${pageNumber}`
         return (getFromAxios(url))
             .then(
@@ -27,7 +29,7 @@ class Purchases {
             );
     };
 
-    async getAllPurchases(searchQuery, perPageAmount, pageNumber) {
+    async getAllPurchases(searchQuery) {
         await (this.getPurchasesFromApi(searchQuery, perPageAmount, pageNumber))
         while (this.responseOnPage == perPageAmount) {
             await this.getPurchasesFromApi(searchQuery, perPageAmount, pageNumber)

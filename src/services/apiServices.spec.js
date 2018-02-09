@@ -16,7 +16,6 @@ describe('getFromAxios', () => {
     })
 
     it('gets a response from api call', (done) => {
-        const id = 1
         const expectedResults = {
             "data": [
                 {

@@ -1,3 +1,5 @@
 {
-    "baseUrl": "https://driftrock-dev-test.herokuapp.com"
+    "baseUrl": "https://driftrock-dev-test.herokuapp.com",
+    "perPageAmount": 100,
+    "pageNumber": 1
 }
