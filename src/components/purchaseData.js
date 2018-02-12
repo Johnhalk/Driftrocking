@@ -19,6 +19,7 @@ class Purchases {
             response => {
                 this.responseData = this.responseData.concat(response.data.data)
                 this.responseOnPage = (response.data.data).length
+                return console.log("Data is", this.responseData)
             }
             )
             .catch(
