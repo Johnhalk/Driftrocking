@@ -25,7 +25,7 @@ describe('getFromAxios', () => {
         })
 
         const onFulfilled = sinon.spy()
-        axios.get(baseUrl).then(onFulfilled)
+        getFromAxios(baseUrl).then(onFulfilled)
 
         moxios.wait(() => {
             expect(onFulfilled.getCall(0).args[0].data).toBe(expectedResults)

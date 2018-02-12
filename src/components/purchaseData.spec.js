@@ -1,8 +1,7 @@
-var axios = require('axios'),
-    moxios = require('moxios'),
+var moxios = require('moxios'),
     expect = require('expect'),
     sinon = require('sinon'),
-    Purchases = require('./purchases'),
+    Purchases = require('./purchaseData'),
     purchaseStub = require('../stub/purchaseStubData.json'),
     config = require('../config.json')
 
@@ -15,15 +14,15 @@ describe('Purchases', () => {
     beforeEach(() => {
         moxios.install()
         purchases = new Purchases
-    })
+    });
 
     afterEach(() => {
         moxios.uninstall()
-    })
-    describe('getPurchasesFromApi', () => {
+    });
+
+    describe('getPurchaseDataFromApi', () => {
         it('should call the Api and save the response data to an array', async () => {
             const expectedResults = purchaseStub
-
             moxios.wait(() => {
                 const request = moxios
                     .requests
@@ -33,7 +32,7 @@ describe('Purchases', () => {
                     response: expectedResults
                 });
             });
-            await purchases.getPurchasesFromApi("purchases")
+            await purchases.getPurchaseDataFromApi()
             expect(purchases.responseData).toEqual(expectedResults.data)
             expect(purchases.responseOnPage).toEqual(100)
         });
@@ -64,10 +63,10 @@ describe('Purchases', () => {
                 response: expectedResultsPageTwo
             });
             const onFulfilled = sinon.spy()
-            await purchases.getAllPurchases("purchases").then(onFulfilled)
+            await purchases.getAllPurchases().then(onFulfilled)
                 let resultsOfData = expectedResultsPageOne.data.concat(expectedResultsPageTwo.data)
                 expect(purchases.responseData).toEqual(resultsOfData)
-        })
+        });
     });
 
 });
