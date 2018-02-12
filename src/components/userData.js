@@ -6,7 +6,7 @@ let baseUrl = config.baseUrl
 let perPageAmount = config.perPageAmount
 let pageNumber = config.pageNumber
 
-class Purchases {
+class Users {
     constructor() {
         this.responseOnPage = this.responseOnPage
         this.responseData = []
@@ -40,4 +40,4 @@ class Purchases {
     }
 };
 
-module.exports = Purchases;
+module.exports = Users;

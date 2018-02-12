@@ -1,4 +1,6 @@
-var Purchases = require('../src/components/purchaseData')
+var Purchases = require('../src/components/purchaseData'),
+    Users = require('../src/components/userData')
+
 
 if (process.argv.length < 2) {
     console.log("Usage: " + __filename + " SOME_PARAM");
