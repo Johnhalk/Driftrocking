@@ -19,7 +19,7 @@ class Purchases {
             response => {
                 this.responseData = this.responseData.concat(response.data.data)
                 this.responseOnPage = (response.data.data).length
-                return console.log("Data is", this.responseData)
+                // return console.log("Data is", this.responseData)
             }
             )
             .catch(
@@ -32,12 +32,12 @@ class Purchases {
     async getAllPurchases() {
         await (this.getPurchaseDataFromApi())
         while (this.responseOnPage == perPageAmount) {
-            console.log("Current page number hit", pageNumber)
-            console.log("Current number of data entries on current page", this.responseOnPage)
+            // console.log("Current page number hit", pageNumber)
+            // console.log("Current number of data entries on current page", this.responseOnPage)
             pageNumber++
             await this.getPurchaseDataFromApi()
         }
-        return console.log("Number of purchase data entries", (this.responseData).length)
+        // return console.log("Number of purchase data entries", (this.responseData).length)
     }
 };
 

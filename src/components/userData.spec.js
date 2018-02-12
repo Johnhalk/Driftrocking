@@ -5,11 +5,8 @@ var moxios = require('moxios'),
     usersStub = require('../stub/userStubData.json'),
     config = require('../config.json')
 
-describe('Purchases', () => {
+describe('Users', () => {
     let users
-    let baseUrl = config.baseUrl
-    let perPageAmount = config.perPageAmount
-    let pageNumber = config.pageNumber
 
     beforeEach(() => {
         moxios.install()

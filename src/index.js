@@ -1,5 +1,6 @@
 var Purchases = require('../src/components/purchaseData'),
-    Users = require('../src/components/userData')
+    Users = require('../src/components/userData'),
+    Data = require('../src/components/dataCompare')
 
 
 // if (process.argv.length <= 2) {
@@ -8,7 +9,7 @@ var Purchases = require('../src/components/purchaseData'),
 // }
 
 var param = process.argv[2]
-
+let data
 module.exports = {
     testCall() {
         let purchases = new Purchases
@@ -26,6 +27,15 @@ module.exports = {
     testUserCallTwo() {
         let users = new Users
         users.getUserDataFromApi()
+    },
+    testDataCall() {
+        data = new Data
+        data.getData()
+    },
+    async testPurchaseData() {
+        data = new Data
+       await data.getData()
+        data.getMostSoldItem()
     }
 }
 // node index.js testCall purchases 100 1

@@ -7,9 +7,6 @@ var moxios = require('moxios'),
 
 describe('Purchases', () => {
     let purchases
-    let baseUrl = config.baseUrl
-    let perPageAmount = config.perPageAmount
-    let pageNumber = config.pageNumber
 
     beforeEach(() => {
         moxios.install()
