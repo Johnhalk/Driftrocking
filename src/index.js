@@ -28,9 +28,10 @@ module.exports = {
         let users = new Users
         users.getUserDataFromApi()
     },
-    testDataCall() {
+    async testDataCall() {
         data = new Data
-        data.getData()
+        await data.getData()
+        console.log(data.userData)
     },
     async testPurchaseData() {
         data = new Data
@@ -44,6 +45,11 @@ module.exports = {
     getTotalSpendById(userEmail) {
         data = new Data
         data.getTotalSpendById(userEmail)
+    },
+    async getMostLoyalUser() {
+        data = new Data
+        // await data.getData()
+        data.getMostLoyalUser()
     }
 }
 // node index.js getUserId S27G-8UMJ-LDSL-UOPN

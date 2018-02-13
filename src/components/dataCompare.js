@@ -20,6 +20,7 @@ class Data {
         await purchases.getAllPurchases()
         this.purchaseData = purchases.responseData
     }
+
     // Get Most frequently occuring purchase in purchase data
     getMostSoldItem() {
         var output = _.mapValues(this.purchaseData, function (item) {
@@ -39,8 +40,6 @@ class Data {
                     mostSoldItems = []
                     mostSoldItems.push(result[i][0])
                 }
-            } else {
-
             }
         }
         return mostSoldItems
@@ -50,6 +49,7 @@ class Data {
     getUserId(userEmail) {
         var userEmail = userEmail
         let i
+        console.log(this.userData.length)
         for (i = 0; i < this.userData.length; i++) {
             if (this.userData[i].email == userEmail) {
                 var result = this.userData[i].id
@@ -58,6 +58,7 @@ class Data {
         console.log(result)
         return result
     }
+
     // Get the total spend of a specific user id in purchase data
     getTotalSpendById(userEmail) {
         var userId = this.getUserId(userEmail)
@@ -69,12 +70,52 @@ class Data {
                 purchaseSpendResult.push(this.purchaseData[i].spend)
             }
         }
-        for (i=0; i< purchaseSpendResult.length; i++) {
+        for (i = 0; i < purchaseSpendResult.length; i++) {
             totalSpendOfUser += parseFloat(purchaseSpendResult[i])
             var total = totalSpendOfUser
         }
         console.log(totalSpendOfUser)
         return total
+    }
+
+
+    getUserEmail(dataSet) {
+        var dataSet = dataSet
+        let i
+        let x = 0
+        var result = []
+        for (i = 0; i < this.userData.length; i++) {
+            if (this.userData[i].id == dataSet[x]) {
+                result.push(this.userData[i].email)
+                x++
+                i = 0
+            }
+        }
+        console.log(result)
+        return result
+    }
+
+    getMostLoyalUser() {
+        var output = _.mapValues(this.purchaseData, function (item) {
+            return item.user_id
+        })
+        var result = _.chain(output).countBy().toPairs().value()
+        let frequencyOfPurchase = 0
+        let newFrequencyOfPurchase = 0
+        let mostSoldItems = []
+        let i
+        for (i = 0; i < result.length; i++) {
+            if (result[i][1] >= frequencyOfPurchase) {
+                frequencyOfPurchase = result[i][1]
+                mostSoldItems.push(result[i][0])
+                if (newFrequencyOfPurchase != frequencyOfPurchase) {
+                    newFrequencyOfPurchase = frequencyOfPurchase
+                    mostSoldItems = []
+                    mostSoldItems.push(result[i][0])
+                }
+            }
+        }
+        return this.getUserEmail(mostSoldItems)
     }
 
     async getValueOfItem() {

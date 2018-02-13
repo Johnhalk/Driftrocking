@@ -19,7 +19,6 @@ class Users {
             response => {
                 this.responseData = this.responseData.concat(response.data.data)
                 this.responseOnPage = (response.data.data).length
-                // return console.log("Data is", this.responseData)
             }
             )
             .catch(
@@ -32,12 +31,9 @@ class Users {
     async getAllUsers() {
         await (this.getUserDataFromApi())
         while (this.responseOnPage == perPageAmount) {
-            // console.log("Current page number hit", pageNumber)
-            // console.log("Current number of data entries on current page", this.responseOnPage)
             pageNumber++
             await this.getUserDataFromApi()
         }
-        // return console.log("Number of user data entries", (this.responseData).length)
     }
 };
 
