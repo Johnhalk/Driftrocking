@@ -24,16 +24,16 @@ class Data {
             return item.item
         })
         var result = _.chain(output).countBy().toPairs().value()
-        let maxValue = 0
-        let newMaxValue = 0
+        let frequencyOfPurchase = 0
+        let newFrequencyOfPurchase = 0
         let mostSoldItems = []
         let i
         for (i = 0; i < result.length; i++) {
-            if (result[i][1] >= maxValue) {
-                maxValue = result[i][1]
+            if (result[i][1] >= frequencyOfPurchase) {
+                frequencyOfPurchase = result[i][1]
                 mostSoldItems.push(result[i][0])
-                if (newMaxValue != maxValue) {
-                    newMaxValue = maxValue
+                if (newFrequencyOfPurchase != frequencyOfPurchase) {
+                    newFrequencyOfPurchase = frequencyOfPurchase
                     mostSoldItems = []
                     mostSoldItems.push(result[i][0])
                 }
