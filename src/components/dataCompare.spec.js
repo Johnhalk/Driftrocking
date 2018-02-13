@@ -36,6 +36,21 @@ describe('Data', () => {
 
     });
 
+    describe('getUserId', () => {
+        it('should find a specific user id based on email input', () =>{
+            data.userData = usersStub.data
+            expect(data.getUserId('terry_henry@doyle.io')).toEqual("S27G-8UMJ-LDSL-UOPN")
+        });
+    });
+
+    describe('getTotalSpendById', () => {
+        it('should add up the total spend in purchase data based on their unique id', () => {
+            data.userData = usersStub.data
+            data.purchaseData = purchaseStub.data
+            expect(data.getTotalSpendById('terry_henry@doyle.io')).toEqual(58.68)
+        })
+    })
+
     // describe('getData', () => {
     //     it('should get the users and purchases data', async () => {
     //         const userResults = usersStub

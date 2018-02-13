@@ -36,8 +36,17 @@ module.exports = {
         data = new Data
        await data.getData()
         data.getMostSoldItem()
+    },
+    getUserId(userEmail) {
+        data = new Data
+        data.getUserId(userEmail)
+    },
+    getTotalSpendById(userEmail) {
+        data = new Data
+        data.getTotalSpendById(userEmail)
     }
 }
+// node index.js getUserId S27G-8UMJ-LDSL-UOPN
 // node index.js testCall purchases 100 1
 // ARGV to allow command line interactions
 // make-runnable to execute on command line
