@@ -19,18 +19,24 @@ class Data {
         this.purchaseData = purchases.responseData
     }
 
-     getMostSoldItem() {
+    getMostSoldItem() {
         var output = _.mapValues(this.purchaseData, function (item) {
             return item.item
         })
         var result = _.chain(output).countBy().toPairs().value()
         let maxValue = 0
+        let newMaxValue = 0
         let mostSoldItems = []
         let i
         for (i = 0; i < result.length; i++) {
             if (result[i][1] >= maxValue) {
                 maxValue = result[i][1]
                 mostSoldItems.push(result[i][0])
+                if (newMaxValue != maxValue) {
+                    newMaxValue = maxValue
+                    mostSoldItems = []
+                    mostSoldItems.push(result[i][0])
+                }
             } else {
 
             }

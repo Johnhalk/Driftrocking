@@ -6,6 +6,7 @@ var moxios = require('moxios'),
     Purchases = require('./purchaseData'),
     usersStub = require('../stub/userStubData.json'),
     purchaseStub = require('../stub/purchaseStubData.json'),
+    extraPurchaseStub = require('../stub/extraPurchaseStubData.json'),
     config = require('../config.json')
 
 describe('Data', () => {
@@ -24,8 +25,15 @@ describe('Data', () => {
     describe('getMostSoldItems', () => {
         it('should find the most frequent purchases', () => {
             data.purchaseData = purchaseStub.data
-            expect(data.getMostSoldItem(data.purchaseData)).toEqual(["Lightweight Steel Car", "Heavy Duty Iron Table"])
+            expect(data.getMostSoldItem(data.purchaseData)).toEqual(["Synergistic Paper Keyboard"])
         });
+
+        it('should handle multiple purchases of the same frequency', () => {
+            const extraPurchaseData = extraPurchaseStub.data
+            data.purchaseData = extraPurchaseData
+            expect(data.getMostSoldItem(data.purchaseData)).toEqual(["Lightweight Steel Card machine", "Lightweight Steel Car", "Heavy Duty Iron Table"])
+        });
+
     });
 
     // describe('getData', () => {
