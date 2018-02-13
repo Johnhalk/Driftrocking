@@ -33,7 +33,7 @@ class Users {
         while (this.responseOnPage == perPageAmount) {
             pageNumber++
             await this.getUserDataFromApi()
-        }
+        } pageNumber = config.pageNumber
     }
 };
 

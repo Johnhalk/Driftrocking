@@ -33,7 +33,7 @@ class Purchases {
         while (this.responseOnPage == perPageAmount) {
             pageNumber++
             await this.getPurchaseDataFromApi()
-        }
+        } pageNumber = config.pageNumber
     }
 };
 

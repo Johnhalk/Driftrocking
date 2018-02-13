@@ -2,6 +2,7 @@ var moxios = require('moxios'),
     expect = require('expect'),
     sinon = require('sinon'),
     Data = require('./dataCompare'),
+    User = require('../userData/userData'),
     usersStub = require('../../stub/userStubData.json'),
     purchaseStub = require('../../stub/purchaseStubData.json'),
     extraPurchaseStub = require('../../stub/extraPurchaseStubData.json'),
@@ -21,6 +22,47 @@ describe('Data', () => {
         moxios.uninstall()
     });
 
+    describe('getData', () => {
+        it('should get the users and purchases data', async function () {
+            const userResults = usersStub
+            const userResultsTwo = {
+                "data": []
+            }
+            const purchaseResults = purchaseStub
+            const purchaseResultsTwo = {
+                "data": []
+            }
+            let baseUrlPageOne = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=1'
+            let baseUrlPageTwo = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=2'
+            let baseUrlPageThree = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=100&page=1'
+            let baseUrlPageFour = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=100&page=2'
+
+            moxios.stubRequest(baseUrlPageOne, {
+                status: 200,
+                response: userResults
+            });
+
+            moxios.stubRequest(baseUrlPageTwo, {
+                status: 200,
+                response: userResultsTwo
+            });
+
+            moxios.stubRequest(baseUrlPageThree, {
+                status: 200,
+                response: purchaseResults
+            });
+
+            moxios.stubRequest(baseUrlPageFour, {
+                status: 200,
+                response: purchaseResultsTwo
+            });
+
+            const onFulfilled = sinon.spy()
+            await data.getData().then(onFulfilled)
+            expect(data.userData).toEqual(userResults.data)
+            expect(data.purchaseData).toEqual(purchaseResults.data)
+        });
+    });
 
     describe('getMostSoldItems', () => {
         it('should find the most frequent purchases', () => {
@@ -108,46 +150,5 @@ describe('Data', () => {
         })
     });
 
-    // describe('getData', () => {
-    //     it('should get the users and purchases data', async function() {
-    //         const userResults = usersStub
-    //         const userResultsTwo = {
-    //             "data": []
-    //         }
-    //         const purchaseResults = purchaseStub
-    //         const purchaseResultsTwo = {
-    //             "data": []
-    //         }
-    //         let baseUrlPageOne = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=1'
-    //         let baseUrlPageTwo = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=2'
-    //         let baseUrlPageThree = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=100&page=1'
-    //         let baseUrlPageFour = 'https://driftrock-dev-test.herokuapp.com/purchases?per_page=100&page=2'
-
-    //         moxios.stubRequest(baseUrlPageOne, {
-    //             status: 200,
-    //             response: userResults
-    //         });
-
-    //         moxios.stubRequest(baseUrlPageTwo, {
-    //             status: 200,
-    //             response: userResultsTwo
-    //         });
-
-    //         moxios.stubRequest(baseUrlPageThree, {
-    //             status: 200,
-    //             response: purchaseResults
-    //         });
-
-    //         moxios.stubRequest(baseUrlPageFour, {
-    //             status: 200,
-    //             response: purchaseResultsTwo
-    //         });
-
-    //         const onFulfilled = sinon.spy()
-    //         await data.getData().then(onFulfilled)
-    //         expect(data.userData).toEqual(userResults.data)
-    //         expect(data.purchaseData).toEqual(purchaseResults.data)
-    //     });
-    // });
 
 });

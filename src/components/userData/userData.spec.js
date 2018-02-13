@@ -11,6 +11,7 @@ describe('Users', () => {
     beforeEach(() => {
         moxios.install()
         users = new Users
+        let pageNumber = config.pageNumber
     });
 
     afterEach(() => {
@@ -36,7 +37,7 @@ describe('Users', () => {
     });
 
     describe('getAllUsers', () => {
-        it('should call the Api until it has hit the last page with data available', async () => {
+        it('should call the Api until it has hit the last page with data available', async function () {
             let baseUrlPageOne = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=1'
             let baseUrlPageTwo = 'https://driftrock-dev-test.herokuapp.com/users?per_page=100&page=2'
             const expectedResultsPageOne = usersStub
