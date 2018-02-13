@@ -1,5 +1,5 @@
-var getFromAxios = require("../services/apiServices"),
-    config = require('../config.json'),
+var getFromAxios = require("../../services/apiServices"),
+    config = require('../../config.json'),
     async = require('async')
 
 let baseUrl = config.baseUrl

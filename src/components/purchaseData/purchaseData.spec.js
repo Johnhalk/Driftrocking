@@ -2,8 +2,8 @@ var moxios = require('moxios'),
     expect = require('expect'),
     sinon = require('sinon'),
     Purchases = require('./purchaseData'),
-    purchaseStub = require('../stub/purchaseStubData.json'),
-    config = require('../config.json')
+    purchaseStub = require('../../stub/purchaseStubData.json'),
+    config = require('../../config.json')
 
 describe('Purchases', () => {
     let purchases

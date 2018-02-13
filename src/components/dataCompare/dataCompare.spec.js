@@ -2,12 +2,10 @@ var moxios = require('moxios'),
     expect = require('expect'),
     sinon = require('sinon'),
     Data = require('./dataCompare'),
-    Users = require('./userData'),
-    Purchases = require('./purchaseData'),
-    usersStub = require('../stub/userStubData.json'),
-    purchaseStub = require('../stub/purchaseStubData.json'),
-    extraPurchaseStub = require('../stub/extraPurchaseStubData.json'),
-    config = require('../config.json')
+    usersStub = require('../../stub/userStubData.json'),
+    purchaseStub = require('../../stub/purchaseStubData.json'),
+    extraPurchaseStub = require('../../stub/extraPurchaseStubData.json'),
+    config = require('../../config.json')
 
 describe('Data', () => {
     let data

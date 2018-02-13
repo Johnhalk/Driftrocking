@@ -2,8 +2,8 @@ var moxios = require('moxios'),
     expect = require('expect'),
     sinon = require('sinon'),
     Users = require('./userData'),
-    usersStub = require('../stub/userStubData.json'),
-    config = require('../config.json')
+    usersStub = require('../../stub/userStubData.json'),
+    config = require('../../config.json')
 
 describe('Users', () => {
     let users

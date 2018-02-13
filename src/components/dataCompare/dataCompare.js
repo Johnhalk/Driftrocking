@@ -1,7 +1,7 @@
-var Users = require('./userData'),
-    Purchases = require('./purchaseData'),
-    purchaseStub = require('../stub/purchaseStubData.json'),
-    userStub = require('../stub/userStubData.json'),
+var Users = require('../userData/userData'),
+    Purchases = require('../purchaseData/purchaseData'),
+    purchaseStub = require('../../stub/purchaseStubData.json'),
+    userStub = require('../../stub/userStubData.json'),
     _ = require('lodash');
 let users = new Users
 let purchases = new Purchases
@@ -42,7 +42,6 @@ class Data {
                 }
             }
         }
-        console.log("most sold items:", mostSoldItems)
         return mostSoldItems
     }
 
@@ -73,7 +72,6 @@ class Data {
             totalSpendOfUser += parseFloat(purchaseSpendResult[i])
             var total = totalSpendOfUser
         }
-        console.log("total:",total)
         return total
     }
 
@@ -114,7 +112,6 @@ class Data {
                 }
             }
         }
-         console.log("Most loyal users:", this.getUserEmail(arrayOfLoyalUsers))
          return this.getUserEmail(arrayOfLoyalUsers)
     }
 }
