@@ -21,6 +21,7 @@
     "axios": "^0.17.1",
     "es6-promise": "^4.2.4",
     "expect": "^22.2.0",
+    "lodash": "^4.17.5",
     "make-runnable": "^1.3.6",
     "mocha": "^5.0.0",
     "moxios": "^0.4.0",

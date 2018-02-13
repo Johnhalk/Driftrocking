@@ -42,6 +42,7 @@ class Data {
                 }
             }
         }
+        console.log("most sold items:", mostSoldItems)
         return mostSoldItems
     }
 
@@ -49,13 +50,11 @@ class Data {
     getUserId(userEmail) {
         var userEmail = userEmail
         let i
-        console.log(this.userData.length)
         for (i = 0; i < this.userData.length; i++) {
             if (this.userData[i].email == userEmail) {
                 var result = this.userData[i].id
             }
         }
-        console.log(result)
         return result
     }
 
@@ -74,11 +73,11 @@ class Data {
             totalSpendOfUser += parseFloat(purchaseSpendResult[i])
             var total = totalSpendOfUser
         }
-        console.log(totalSpendOfUser)
+        console.log("total:",total)
         return total
     }
 
-
+    // Gets users emails based on their unique IDs
     getUserEmail(dataSet) {
         var dataSet = dataSet
         let i
@@ -91,48 +90,32 @@ class Data {
                 i = 0
             }
         }
-        console.log(result)
         return result
     }
 
+    //Finds most loyal users based on frequency of purchase and returns their email based on their unique IDs
     getMostLoyalUser() {
         var output = _.mapValues(this.purchaseData, function (item) {
             return item.user_id
         })
         var result = _.chain(output).countBy().toPairs().value()
-        let frequencyOfPurchase = 0
-        let newFrequencyOfPurchase = 0
-        let mostSoldItems = []
+        let numberOfPurchases = 0
+        let newnumberOfPurchases = 0
+        let arrayOfLoyalUsers = []
         let i
         for (i = 0; i < result.length; i++) {
-            if (result[i][1] >= frequencyOfPurchase) {
-                frequencyOfPurchase = result[i][1]
-                mostSoldItems.push(result[i][0])
-                if (newFrequencyOfPurchase != frequencyOfPurchase) {
-                    newFrequencyOfPurchase = frequencyOfPurchase
-                    mostSoldItems = []
-                    mostSoldItems.push(result[i][0])
+            if (result[i][1] >= numberOfPurchases) {
+                numberOfPurchases = result[i][1]
+                arrayOfLoyalUsers.push(result[i][0])
+                if (newnumberOfPurchases != numberOfPurchases) {
+                    newnumberOfPurchases = numberOfPurchases
+                    arrayOfLoyalUsers = []
+                    arrayOfLoyalUsers.push(result[i][0])
                 }
             }
         }
-        return this.getUserEmail(mostSoldItems)
-    }
-
-    async getValueOfItem() {
-        await this.getData()
-        var output =
-            _(this.purchaseData)
-                .groupBy('id')
-                .map((objs, userId) => ({
-                    'id': key,
-                    'spend': _.sumBy(objs, 'spend')
-                }))
-                .value();
-        console.log(output)
-        var maxSpendObject = Math.max(...output.map(e => parseFloat(e.spend)));
-        var maxSpend = maxSpendObject.toString()
-        var obj = output.find(outputs => outputs.spend === maxSpend);
-        console.log(obj.item);
+         console.log("Most loyal users:", this.getUserEmail(arrayOfLoyalUsers))
+         return this.getUserEmail(arrayOfLoyalUsers)
     }
 }
 
