@@ -35,7 +35,7 @@ So that I can evaluate who the most loyal customer is,
 I want to be able to use the data and evaluate which customer has had the most purchases.
 
 As a user,
-So that I can evaluate who the total spend of a specific customer is,
+So that I can evaluate what the total spend of a specific customer is,
 I want to be able to use the data and evaluate a customers total spend based from their email address.
 
 ```
