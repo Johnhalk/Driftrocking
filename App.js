@@ -9,10 +9,10 @@ module.exports = {
         await data.getData()
         return data.getMostSoldItem()
     },
-    async total_spend(param) {
+    async total_spend(parameter) {
         data = new Data
         await data.getData()
-        return data.getTotalSpendById(param)
+        return data.getTotalSpendById(parameter)
     },
     async most_loyal() {
         data = new Data
