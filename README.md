@@ -5,6 +5,7 @@
 This is a application written in Node.js, tested in Mocha.
 - User can request data from two different API sources, users & purchases
 - User can compare these two different datas to evaluate three functions - most_sold, most_loyal & total_spend(user_email)
+- Application is run directly from the command line
 
 ## User stories:
 
