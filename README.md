@@ -60,9 +60,9 @@ I want to be able to use the data and evaluate a customers total spend based fro
 ## Usage
 
 - Run the three commands from the command line interface with the following:
-```node App.js most_loyal```
-```node App.js most_sold```
-```node App.js total_spend userEmail - E.G node App.js total_spend langosh.tierra@erdman.co```
+- ```node App.js most_loyal```
+- ```node App.js most_sold```
+- ```node App.js total_spend userEmail - E.G node App.js total_spend langosh.tierra@erdman.co```
 - Note the total_spend command requires a user email passed as an argument to run.
 - Note I chose to keep the commands in App.js snake case as per the instructions in tech test, normally for JavaScript I would have used the standard camel case syntax which runs through the rest of the application
 
